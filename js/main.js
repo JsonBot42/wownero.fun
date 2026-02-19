@@ -247,4 +247,44 @@ document.addEventListener('DOMContentLoaded', () => {
     if (slides.length > 0) {
         setInterval(nextSlide, intervalTime);
     }
+
+    // --- 5. Mobile Menu Toggle ---
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuCloseBtn = document.getElementById('mobile-menu-close'); // New close button
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    let isMenuOpen = false;
+
+    function toggleMenu(forceClose = false) {
+        if (forceClose) {
+            isMenuOpen = false;
+        } else {
+            isMenuOpen = !isMenuOpen;
+        }
+
+        if (isMenuOpen) {
+            mobileMenu.classList.remove('translate-x-full');
+            // Change icon to close
+            menuBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+            document.body.style.overflow = 'hidden'; // Stop background scroll
+        } else {
+            mobileMenu.classList.add('translate-x-full');
+            // Change icon to hamburger
+            menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            document.body.style.overflow = '';
+        }
+    }
+
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => toggleMenu());
+        
+        if (mobileMenuCloseBtn) {
+            mobileMenuCloseBtn.addEventListener('click', () => toggleMenu(true));
+        }
+
+        // Close menu when a link is clicked
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => toggleMenu(true));
+        });
+    }
 });

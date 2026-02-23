@@ -1,0 +1,22 @@
+# Wownero Landing Page
+
+> Wownero: Such Privacy. Much Wow.
+
+## Description
+This is the official landing page for Wownero, a privacy-centric cryptocurrency that embraces meme culture ("Doge of Monero"). It features a humorous and visually engaging design with references to internet culture.
+
+## Key Content & Navigation
+
+- **Concept**: A privacy coin based on Monero with a meme-focused community.
+- **Mining**: Information about mining Wownero.
+- **Wallets**: Guide to obtaining and using Wownero wallets.
+- **Community**: Links to join the Wownero community channels.
+- **History**: Background, history, and roadmap of the project.
+- **Market**: Exchange information and trading pairs.
+
+## Tech Stack
+- HTML5
+- Tailwind CSS (via CDN)
+- Vanilla JavaScript
+- Font Awesome
+- Google Fonts (Comic Neue, Inter, JetBrains Mono)

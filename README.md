@@ -1,11 +1,11 @@
-# Wownero Landing Page 🐶🎩
+# Wownero Fun Page (wownero.fun) 🐶🎩
 
 > **Such Privacy. Much Wow.**  
 > The official* landing page for the only memecoin that actually respects your financial privacy.  
 > _(*official in the decentralized sense, usually)_
 
 
-## 🧐 What is this?
+## 🧐 What is this? - It's wownero.fun
 
 This is the source code for the Wownero landing page. It's designed to be:
 1.  **Fast**: No heavy frameworks slowing down your meme consumption.
